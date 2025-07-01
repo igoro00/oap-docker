@@ -71,3 +71,16 @@ If you get this error while interacting with docker:
 sudo systemctl enable --now docker
 ```
 
+## ToDo:
+
+Things to do before it's actually usable:
+
+ - [x] Install enough dependencies for it to start
+ - [ ] Map `~/.openauto` to a persistent volume
+ - [ ] Pass USB devices to the container
+ - [ ] Integrate [aa-proxy-oap](https://github.com/KreAch3R/aa-proxy-oap)
+ - [ ] Make it autostart (maybe `docker compose`?)
+
+Later:
+
+ - [ ] Make as many settings as possible work through OAP GUI (requires mapping various files)
