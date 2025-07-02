@@ -35,11 +35,11 @@ cd oap-docker
     ```
 5. Run the container:
 ```sh
-# allow access to host's X11
-xhost +local:docker
-
 # use default X11 DISPLAY, only needed if you run this through ssh
 export DISPLAY=:0
+
+# allow access to host's X11
+xhost +local:docker
 
 docker run --rm -it \
     -e DISPLAY=$DISPLAY \

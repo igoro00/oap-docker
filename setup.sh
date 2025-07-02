@@ -16,4 +16,4 @@ cp -r /usr/local/lib/libaasdk.so build/src/usr/local/lib/libaasdk.so
 cp -r /usr/local/lib/libaasdk_proto.so build/src/usr/local/lib/libaasdk_proto.so
 cp -r /etc/apt build/src/etc/apt
 
-docker build -t oap-docker .
+docker build --no-cache --pull -t oap-docker .
